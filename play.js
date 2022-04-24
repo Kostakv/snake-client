@@ -23,3 +23,6 @@ console.log("Connecting ...");
 connect();
 
 
+module.exports = { connect };
+
+
