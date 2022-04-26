@@ -1,12 +1,12 @@
 const net = require("net");
-const { connect } = require("./client");
+const { connect } = require("./client"); // Imported connect function
 
-const { setupInput } = require("./input");
+const { setupInput } = require("./input"); // Imported setupInput function
 
-console.log("Connecting ...");
+console.log("Connecting ..."); // Displays connecting when trying to connect
 
 
-setupInput(connect());
+setupInput(connect()); // Passes returned value from connect to setupInput.
 
 
 
