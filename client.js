@@ -11,10 +11,14 @@ const connect = function () {
 
 
   conn.on("connect", () => {
-    console.log(`Name: ${name}`)
+    conn.write('Name: KV');
+    console.log(`Successfully connected to game server`);
+    
+
     //console.log("you died due to afk :(")
     return conn
   });
+
 
   
 
