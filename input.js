@@ -1,18 +1,19 @@
+const { MOVE_DOWN_KEY, MOVE_UP_KEY, MOVE_LEFT_KEY, MOVE_RIGHT_KEY } = require("./constants"); // imports constants from constants.js
 let connection;
 // Handles all user inputs for movement.
 const handleUserInput = function (key) {
   
-  if (key === 'a' || key === 'A'){
+  if (key === MOVE_LEFT_KEY){
     connection.write('Move: left') // moves left for A
     
   }
-  if (key === 'w' || key === 'W'){ // Moves up for W
+  if (key === MOVE_UP_KEY){ // Moves up for W
     connection.write('Move: up')
   }
-  if (key === 's' || key === 'S'){ // Moves down for S
+  if (key === MOVE_DOWN_KEY){ // Moves down for S
     connection.write('Move: down')
   }
-  if (key === 'd' || key === 'D'){ // Moves right for D
+  if (key === MOVE_RIGHT_KEY){ // Moves right for D
     connection.write('Move: right')
   }
 

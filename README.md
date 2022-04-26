@@ -16,3 +16,10 @@ Before you can run this client, you will need to be running the server side whic
 
 - Follow steps inside the snek server repo to run the server side
 - Run the development snake client using the `node play.js` command.
+
+## Snake INFO
+
+- input.js (script that handles all input from the user)
+- client.js (basic information of the client AKA player)
+- play.js (main script for handling all functions)
+- constants.js (All constants in this file)

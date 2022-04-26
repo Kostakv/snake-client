@@ -1,5 +1,5 @@
 const net = require("net");
-const { IP, PORT } = require("./constants"); // imports constants from constants.js
+const { IP, PORT, NAME } = require("./constants"); // imports constants from constants.js
 
 const name = process.argv.slice(2);
 // Connect function. uses constant IP and PORT
@@ -17,7 +17,7 @@ const connect = function () {
 
   // Connection established function. 
   conn.on("connect", () => {
-    conn.write('Name: KV');
+    conn.write(`Name: ${NAME}`);
     console.log(`Successfully connected to game server`);
     
     return conn
